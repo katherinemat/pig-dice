@@ -1,3 +1,11 @@
 #results {
-  display: none; 
+  display: none;
+}
+.p2Turn {
+  display: none;
+  float: right;
+}
+
+.overallScore {
+  margin-bottom: 0px;
 }

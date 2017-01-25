@@ -21,3 +21,6 @@ output: PLAYER 1 IS THE WINNER
 7. Disable roll and hold button for the player who is not playing
 input: player 1 active
 output: player 2 inactive
+8. Reset the dice and current roll value once the player's turn is over
+input: dice: 1 current roll:0
+output: dice: current roll:
