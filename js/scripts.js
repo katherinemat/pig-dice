@@ -23,5 +23,9 @@ $(document).ready(function() {
     diceGame.p1Score += diceGame.currentRoll;
     $("#p1-score").empty().append(diceGame.p1Score);
     diceGame.currentRoll = 0;
+    if(diceGame.p1Score >= 10) {
+      $("#results").show();
+      $(".winner").append("player 1");
+    }
   });
 });
