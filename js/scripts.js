@@ -6,6 +6,46 @@ var diceGame = {
   p2Score: 0,
 };
 
+
+// var allPlayers = [player1, player2];
+//
+// function Player(html_class) {
+//   this.total = 0;
+//   this.html_class = html_class;
+//   allPlayers.push(this);
+// }
+//
+// var currentPlayer = 0;
+//
+// var player1 = new Player(".p1");
+// var player2 = new Player(".p2");
+//
+// allPlayers[currentPlayer].html_class;
+//
+// function Player(name) {
+//   this.currentRoll = 0;
+//   this.overallScore = 0;
+//   this.name = name;
+// }
+// players = [];
+//
+// $(document).ready(function() {
+//   $("#user").submit(function(event) {
+//     event.preventDefault();
+//     var user = $("input#name").val();
+//
+//     var newPlayer = new Player(user);
+//     players.push(newPlayer);
+//     console.log(players);
+//     $("input#name").val("");
+//   });
+// });
+
+
+
+
+
+
 var rollDice = function() {
   return Math.floor(Math.random()*6)+1;
 }
@@ -37,7 +77,6 @@ $(document).ready(function() {
     $("#p2-current-roll").empty().append(diceGame.p1CurrentRoll);
     $("#p2-dice-roll").empty().append("");
   });
-
   $(".roll2").click(function() {
     var roll = rollDice();
     $("#p2-dice-roll").empty().append(roll);
@@ -62,5 +101,6 @@ $(document).ready(function() {
     }
     $("#p1-current-roll").empty().append(diceGame.p1CurrentRoll);
     $("#p1-dice-roll").empty().append("");
+
   });
 });
